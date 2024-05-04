@@ -1,11 +1,23 @@
-p {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .links {
     display: flex;
 }
 
-p h1 h2 {
+body {
+    background: black;
     color: white;
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+.logo {
+    width: 200px;
+    max-width: 350px;
+    height: 300px;
+
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
