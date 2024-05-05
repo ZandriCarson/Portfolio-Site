@@ -3,19 +3,24 @@
 }
 
 body {
-    background: black;
+    background: slategray;
     color: white;
     font-family: Helvetica;
     margin: 0;
-  }
+}
+
+.wrapper {
+  display: grid;
+}
 
 .banner .logo {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    margin: 80px top;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     * {
       scroll-behavior: smooth;
     }
-  }
+}
