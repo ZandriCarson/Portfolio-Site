@@ -16,6 +16,11 @@ body {
   align-items: center;
 }
 
+main {
+  display: flex;
+  align-items: center;
+}
+
 .banner .logo {
     max-width: 50%;
     height: auto;
