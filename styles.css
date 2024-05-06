@@ -1,0 +1,41 @@
+.links {
+    display: inline-flex;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main {
+  margin-left: auto;
+
+}
+
+.banner .banner-logo {
+  width: 50%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divider {
+  height: 10px;
+  background-color: darkslategrey
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
