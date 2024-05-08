@@ -1,9 +1,16 @@
+* {
+  --background-color: black;
+  --pannel-color: rgb(22, 22, 22);
+  --accent-color: darkslategrey;
+}
+
 .links {
     display: inline-flex;
 }
 
+
 body {
-    background: black;
+    background-color: var(--background-color);
     color: white;
     font-family: Helvetica;
     margin: 0;
@@ -12,18 +19,33 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-top: 20px;
   justify-content: space-evenly;
+  width: 500px;
 }
 
-main {
-  margin-left: auto;
-
+.talent-list {
+  background-color: var(--pannel-color);
 }
+
+.articles {
+  background-color: var(--pannel-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.article {
+  height: 100px;
+  margin-top: 20px;
+}
+
+
 
 .banner .banner-logo {
   width: 50%;
-  max-width: 300px;
+  max-width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -32,15 +54,23 @@ main {
   background-color: white;
 }
 
-.title {
+.small-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   margin-top: 0;
+  color: var(--accent-color);
+}
+
+.large-title {
+  font-size: larger;
 }
 
 .divider {
   height: 10px;
-  background-color: darkslategrey
+  background-color: var(--accent-color);
+}
+.article-divider {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
