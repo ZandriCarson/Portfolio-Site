@@ -1,9 +1,16 @@
+* {
+  --background-color: black;
+  --pannel-color: rgb(22, 22, 22);
+  --accent-color: darkslategrey;
+}
+
 .links {
     display: inline-flex;
 }
 
+
 body {
-    background: black;
+    background-color: var(--background-color);
     color: white;
     font-family: Helvetica;
     margin: 0;
@@ -12,31 +19,30 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  align-items: top;
+  
   justify-content: space-evenly;
+}
+
+.talent-list {
+  background-color: var(--pannel-color);
 }
 
 .talent {
-  background-color: rgb(22, 22, 22);
-  margin-right: 20px;
 }
 
 .articles {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--pannel-color);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 20px;
+  align-items: center;
 }
 
 .article {
   height: 100px;
 }
 
-main {
-  margin-left: auto;
 
-}
 
 .banner .banner-logo {
   width: 50%;
@@ -57,7 +63,7 @@ main {
 
 .divider {
   height: 10px;
-  background-color: darkslategrey
+  background-color: var(--accent-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
