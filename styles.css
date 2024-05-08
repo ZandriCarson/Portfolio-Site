@@ -27,9 +27,6 @@ body {
   background-color: var(--pannel-color);
 }
 
-.talent {
-}
-
 .articles {
   background-color: var(--pannel-color);
   display: flex;
