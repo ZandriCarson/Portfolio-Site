@@ -1,11 +1,35 @@
-* {
+:root {
   --background-color: black;
   --pannel-color: rgb(22, 22, 22);
   --accent-color: darkslategrey;
+  --main-width: 500px;
 }
 
 .links {
     display: inline-flex;
+}
+
+.banner {
+  background-color: white;
+  max-width: 700px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  overflow: hidden; /* Prevent the logo from overflowing the banner */
+  margin: 0 auto; /* Center the banner horizontally */
+}
+
+.logo {
+  width: 200px; /* Ensure the logo container takes full width */
+  text-align: center; /* Center the image within its container */
+}
+
+.banner-logo {
+  max-height: 100%; /* Adjust the logo size as needed */
+  max-width: 100%; /* Adjust the logo size as needed */
+  height: auto; /* Ensure aspect ratio is maintained */
+  width: auto; /* Ensure aspect ratio is maintained */
 }
 
 
@@ -15,54 +39,91 @@ body {
     font-family: Helvetica;
     margin: 0;
 }
-
 .wrapper {
   display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-evenly;
-  width: 500px;
+  position: relative; /* Establish a positioning context for the talent list */
 }
 
-.talent-list {
-  background-color: var(--pannel-color);
+.news {
+  width: 66.66%; /* 2/3rd of the page */
+  padding: 0 20px; /* Add some spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .articles {
-  background-color: var(--pannel-color);
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap; /* Allows articles to wrap to the next line */
 }
 
 .article {
-  height: 100px;
-  margin-top: 20px;
+  width: calc(50% - 20px); /* Half of the news section with some spacing */
+  margin: 20px; /* Add spacing between articles */
+  box-sizing: border-box; /* Include margin in width calculation */
 }
 
-
-
-.banner .banner-logo {
-  width: 50%;
-  max-width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.article-content {
+  display: flex; /* Use flexbox for layout */
 }
-.banner {
+
+.article img {
+  width: 200px;
+  height: 200px;
+}
+
+.text-content {
+  flex: 1;
+  padding-left: 10px; /* Add spacing between image and text */
+  box-sizing: border-box; /* Include padding in width calculation */
+  display: flex; /* Ensure it's a flex container */
+  flex-direction: column; /* Arrange title, date, and description vertically */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.article h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  flex-grow: 1; /* Allow title to grow and occupy remaining space */
+}
+
+.article .date {
+  color: #888;
+}
+
+.divider-thin {
+  width: calc(100% - 40px); /* Equal to the width of the articles */
+  height: 1px;
   background-color: white;
+  margin: 10px 20px; /* Adjust spacing */
+}
+
+.talent {
+  width: 33.33%; /* 1/3rd of the page */
+  padding: 0 20px; /* Add some spacing */
+  position: sticky; /* Stick talent list */
+  top: 0; /* Stick talent list at the top */
+  right: 0; /* Align talent list to the right */
+}
+
+.talent-list {
+  list-style: none;
+  padding: 0;
+}
+
+.talent-list li {
+  margin-bottom: 10px;
 }
 
 .small-title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
+  font-size: medium;
   margin-top: 0;
   color: var(--accent-color);
 }
 
 .large-title {
   font-size: larger;
+  font-weight: bold;
+  color: white;
 }
 
 .divider {
