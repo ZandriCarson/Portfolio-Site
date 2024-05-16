@@ -64,6 +64,7 @@ body {
 
 .article-content {
   display: flex; /* Use flexbox for layout */
+  
 }
 
 .article img {
@@ -73,6 +74,7 @@ body {
 
 .text-content {
   flex: 1;
+  
   padding-left: 10px; /* Add spacing between image and text */
   box-sizing: border-box; /* Include padding in width calculation */
   display: flex; /* Ensure it's a flex container */
