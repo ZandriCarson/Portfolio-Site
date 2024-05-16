@@ -40,12 +40,13 @@ body {
     margin: 0;
 }
 .wrapper {
+  margin-top: 20px;
   display: flex;
   position: relative; /* Establish a positioning context for the talent list */
 }
 
 .news {
-  width: 66.66%; /* 2/3rd of the page */
+  /* 2/3rd of the page */
   padding: 0 20px; /* Add some spacing */
   box-sizing: border-box; /* Include padding in width calculation */
 }
@@ -96,7 +97,13 @@ body {
   margin: 10px 20px; /* Adjust spacing */
 }
 
+.talent-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .talent {
+  
   width: 33.33%; /* 1/3rd of the page */
   padding: 0 20px; /* Add some spacing */
   position: sticky; /* Stick talent list */
